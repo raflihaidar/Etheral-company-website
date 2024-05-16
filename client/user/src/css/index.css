@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --app-bg: #101827;
+  --sidebar: rgba(21, 30, 47, 1);
+  --sidebar-main-color: #fff;
+  --table-border: #1a2131;
+  --table-header: #1a2131;
+  --app-content-main-color: #fff;
+  --sidebar-link: #fff;
+  --sidebar-active-link: #1d283c;
+  --sidebar-hover-link: #1a2539;
+  --action-color: #2869ff;
+  --action-color-hover: #6291fd;
+  --app-content-secondary-color: #1d283c;
+  --filter-reset: #2c394f;
+  --filter-shadow: rgba(16, 24, 39, 0.8) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.light:root {
+  --app-bg: #fff;
+  --sidebar: #f3f6fd;
+  --app-content-secondary-color: #f3f6fd;
+  --app-content-main-color: #1f1c2e;
+  --sidebar-link: #1f1c2e;
+  --sidebar-hover-link: rgba(195, 207, 244, 0.5);
+  --sidebar-active-link: rgba(195, 207, 244, 1);
+  --sidebar-main-color: #1f1c2e;
+  --filter-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100vh;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#nav {
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--app-bg);
+  color: white;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 5rem;
+}
+
+#nav #navigation {
+  text-align: center;
+  width: 60%;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/header-2.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+header svg {
+  padding: 0 5rem;
+  width: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.brand {
+  font-size: 4rem;
+}
+
+/* #nav #user {
+} */
+
+#user div {
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.work-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+/* .work-container h1 {
+  margin-bottom: 2rem;
+} */
+
+.work {
+  width: 80%;
+  margin: 1rem auto;
+  overflow-x: hidden;
+  display: flex;
+  gap: 0 5rem;
+  justify-content: space-around;
+}
+
+.work figure img {
+  width: 15rem;
+}
+
+.testimonial {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.testimonial figure {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid black;
+}
+
+.testimonial img {
+  border-radius: 25px;
+  width: 10rem;
+}
+
+footer {
+  background-color: var(--app-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+}
