@@ -35,8 +35,11 @@ export default class extends AbstractView {
               <h1>Testimoni</h1>
               <figure class="testimonial-figure">
                 <img src=/user/src/assets/user.jpg> 
-              </figure> <figure class="testimonial-figure">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum, tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis neque magna condimentum augue. Cras interdum blandit eros id eleifend. Sed lacinia augue ut lobortis aliquet.</p>
+              </figure> 
+              <figure class="testimonial-figure">
                 <img src=/user/src/assets/user.jpg> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum, tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis neque magna condimentum augue. Cras interdum blandit eros id eleifend. Sed lacinia augue ut lobortis aliquet.</p>
               </figure> 
             </section>
         `;
