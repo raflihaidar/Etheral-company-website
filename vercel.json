@@ -8,18 +8,26 @@
       "use": "@vercel/node"
     },
     {
-      "src": "client/**",
+      "src": "client/user/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "client/admin/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/((?!.*\\.\\w+$).*)",
+      "src": "/admin/(.*)",
       "dest": "/server/server.js"
     },
     {
-      "src": "/(.+\\.[a-z]+)$",
-      "dest": "/client/$1"
+      "src": "/user/(.*)",
+      "dest": "/server/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server/server.js"
     }
   ]
 }
