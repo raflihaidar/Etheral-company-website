@@ -4,8 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon server/server.js",
-    "build": "webpack --config webpack.config.cjs"
+    "server": "nodemon server/server.js"
   },
   "author": "",
   "license": "ISC",

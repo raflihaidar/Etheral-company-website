@@ -1,0 +1,25 @@
+{
+  "name": "ethereal-web",
+  "version": 2,
+  "public": true,
+  "builds": [
+    {
+      "src": "server/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "client/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/((?!.*\\.\\w+$).*)",
+      "dest": "/server/server.js"
+    },
+    {
+      "src": "/(.+\\.[a-z]+)$",
+      "dest": "/client/$1"
+    }
+  ]
+}
