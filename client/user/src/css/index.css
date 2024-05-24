@@ -97,28 +97,50 @@ header svg {
 }
 
 .about-us {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5rem 0;
   width: 90%;
   height: 100vh;
   margin: 0 auto;
-}
 
-.about-us .detail {
-  width: 60%;
-  position: relative;
-  text-align: justify;
-}
+  .description {
+    display: flex;
+    align-items: center;
 
-.about-us .title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
+    .title {
+      width: 30%;
+      font-size: 2rem;
+    }
 
-.about-us img {
-  width: 15rem;
+    p {
+      width: 70%;
+      text-align: justify;
+    }
+  }
+
+  figure {
+    width: 60%;
+    margin: 3rem auto;
+  }
+
+  figure img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .reason {
+    display: flex;
+    align-items: center;
+
+    .title {
+      width: 50%;
+      font-size: 1.5rem;
+    }
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
 }
 
 .services {
