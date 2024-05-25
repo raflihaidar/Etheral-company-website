@@ -20,7 +20,7 @@ export default class extends AbstractView {
         </section>
       </header>
       
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="description">
           <div class="title">
             <h1>About Us.</h1>
@@ -47,12 +47,12 @@ export default class extends AbstractView {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
             tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
             neque magna condimentum augue. Cras interdum blandit eros id eleifend.
-            Sed lacinia augue ut lobortis aliquet.
+            Sed lacinia augue ut lobortis aliquet.k
           </p>
         </div>
       </section>
       
-      <section class="services">
+      <section class="services" id="our-services">
         <ul class="card-container">
           <li>
             <figure>
@@ -63,6 +63,9 @@ export default class extends AbstractView {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
               tortor quis pretium laoreet,
             </p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
           </li>
           <li>
             <figure>
@@ -73,6 +76,9 @@ export default class extends AbstractView {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
               tortor quis pretium laoreet,
             </p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
           </li>
           <li>
             <figure>
@@ -83,6 +89,9 @@ export default class extends AbstractView {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
               tortor quis pretium laoreet,
             </p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
           </li>
         </ul>
         <div class="title">
@@ -90,7 +99,7 @@ export default class extends AbstractView {
         </div>
       </section>
       
-      <section class="portfolio-container">
+      <section class="portfolio-container" id="portfolio">
         <div class="gallery">
           <div class="title">
             <h1>Portfolio</h1>
@@ -116,7 +125,7 @@ export default class extends AbstractView {
         <button>See More</button>
       </section>
       
-      <section class="testimonial">
+      <section class="testimonial" id="testimoni">
         <h1>Testimoni.</h1>
         <div class="testimonial-list">
           <div class="testimonial-figure">
