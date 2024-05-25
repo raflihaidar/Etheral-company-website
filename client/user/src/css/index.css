@@ -46,6 +46,7 @@ html {
   background-size: cover;
   background-repeat: repeat-x;
   color: #fff;
+  scroll-behavior: smooth;
   z-index: 0;
 }
 
@@ -97,35 +98,57 @@ header svg {
 }
 
 .about-us {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5rem 0;
   width: 90%;
   height: 100vh;
   margin: 0 auto;
-}
 
-.about-us .detail {
-  width: 60%;
-  position: relative;
-  text-align: justify;
-}
+  .description {
+    display: flex;
+    align-items: center;
 
-.about-us .title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
+    .title {
+      width: 30%;
+      font-size: 2rem;
+    }
 
-.about-us img {
-  width: 15rem;
+    p {
+      width: 70%;
+      text-align: justify;
+    }
+  }
+
+  figure {
+    width: 60%;
+    margin: 3rem auto;
+  }
+
+  figure img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .reason {
+    display: flex;
+    align-items: center;
+
+    .title {
+      width: 50%;
+      font-size: 1.5rem;
+    }
+
+    p {
+      width: 50%;
+      text-align: justify;
+    }
+  }
 }
 
 .services {
-  width: 90%;
-  padding: 5rem 0;
+  width: 80%;
+  padding: 10rem 0;
   height: 100vh;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -144,7 +167,7 @@ header svg {
   background-color: #16c79a;
   text-align: center;
   border-radius: 20px;
-  padding: 1rem;
+  padding: 2rem 0;
 }
 
 .services .card-title {
@@ -179,6 +202,12 @@ header svg {
   color: #fff;
 }
 
+.services svg {
+  width: 2rem;
+  margin: auto;
+  cursor: pointer;
+}
+
 #user div {
   padding: 5px 15px;
   border-radius: 50%;
@@ -186,7 +215,6 @@ header svg {
 }
 
 .portfolio-container {
-  height: 100vh;
   width: 90%;
   height: 100vh;
   padding: 5rem 0;
@@ -300,12 +328,54 @@ header svg {
 
 footer {
   background-color: inherit;
-  display: flex;
-  height: 40%;
-  justify-content: center;
-  align-items: center;
   color: white;
-  padding: 2rem;
+  padding: 10rem 0 0 0;
+
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+
+    .profile {
+      width: 30%;
+      h3 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 0.9rem;
+        text-align: justify;
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 0 4rem;
+    }
+
+    ul {
+      text-align: center;
+      font-size: 0.9rem;
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  .bottom {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 
 .whatsapp-icon {
