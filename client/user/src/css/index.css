@@ -124,9 +124,13 @@ html {
 }
 
 footer {
+
   background-color: inherit;
   color: white;
-  padding: 10rem 0 0 0;
+  padding: 2rem 0 0 0;
+  position: relative;
+  bottom: 0;
+  margin: 40rem 0 0 0;
 
   .top {
     display: flex;
