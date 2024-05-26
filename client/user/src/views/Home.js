@@ -3,19 +3,62 @@ import AbstractView from "../../../utils/AbstractView.js";
 export default class extends AbstractView {
   constructor(params) {
     super(params);
-    this.setTitle("Dashboard");
+    this.setTitle("Ethereal Photograpy");
   }
 
   async getHtml() {
     return `
       <header>
-        <section>
+        <section class="caption">
           <div class="tagline">
             <h1>Capturing Moments,</h1>
             <h1>Creating Memories.</h1>
           </div>
           <div class="sub-tagline">
             <p>Every moment, turning ordinary scenes into extraordinary memories</p>
+          </div>
+        </section>
+        <section class="image-slider">
+          <div class="bottom-to-top">
+            <figure>
+              <img src="/user/src/assets/model-1.jpeg" alt="slide image"/>
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-2.jpeg" alt="slide image"/>
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-3.jpeg" alt="slide image"/>
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-1.jpeg" alt="slide image" />
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-2.jpeg" alt="slide image" />
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-3.jpeg" alt="slide image" />
+            <figure>
+          </div>
+          <div class="top-to-bottom">
+            <figure>
+              <img src="/user/src/assets/model-1.jpeg" alt="slide image"/>
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-2.jpeg" alt="slide image"/>
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-3.jpeg" alt="slide image"/>
+            <figure>
+
+            <figure>
+              <img src="/user/src/assets/model-1.jpeg" alt="slide image"/>
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-2.jpeg" alt="slide image"/>
+            <figure>
+            <figure>
+              <img src="/user/src/assets/model-3.jpeg" alt="slide image"/>
+            <figure>
           </div>
         </section>
       </header>
@@ -221,5 +264,9 @@ export default class extends AbstractView {
         </div>
       </section>
     `;
+  }
+
+  async getCSS() {
+    return [];
   }
 }

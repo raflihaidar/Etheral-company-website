@@ -64,3 +64,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   router();
 });
+
+//* Humburger Menu
+
+const navigation = document.querySelector("#nav #navigation");
+
+const menuToggle = document.querySelector(".humberger-menu input");
+menuToggle.addEventListener("click", function () {
+  if (menuToggle.checked) {
+    navigation.style.transform = "translateY(0)";
+  } else {
+    navigation.style.transform = "translateY(-100%)";
+  }
+});
