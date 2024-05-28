@@ -8,7 +8,7 @@ export default class extends AbstractView {
 
   async getHtml() {
     return `
-      <header>
+      <header id="header">
         <section class="caption">
           <div class="tagline">
             <h1>Capturing Moments,</h1>
@@ -165,108 +165,161 @@ export default class extends AbstractView {
             </figure>
           </div>
         </div>
-        <button>See More</button>
+        <button class="see-more">
+          See More
+        </button>
       </section>
       
       <section class="testimonial" id="testimoni">
         <h1>Testimoni.</h1>
-        <div class="testimonial-list">
-          <div class="testimonial-figure">
-            <div class="testimonial-header">
-              <img src="/user/src/assets/user.jpg" alt="user" />
-              <div class="testimonial-profile">
-                <p>Maulana Haqi</p>
-                <p>maulanahaqi@mail.com</p>
+        <div clas="testimonials-slider swiper">
+        <div class="testimonial-list swiper-wrapper">
+          <div class="testimonial-figure swiper-slide">
+            <div class="testimonial-fill">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
+                tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
+                neque magna condimentum augue. Cras interdum blandit eros id eleifend.
+                Sed lacinia augue ut lobortis aliquet.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
               </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
-              tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
-              neque magna condimentum augue. Cras interdum blandit eros id eleifend.
-              Sed lacinia augue ut lobortis aliquet.
-            </p>
-          </div>
-          <div class="testimonial-figure">
-            <div class="testimonial-header">
-              <img src="/user/src/assets/user.jpg" alt="user" />
-              <div class="testimonial-profile">
-                <p>Maulana Haqi</p>
-                <p>maulanahaqi@mail.com</p>
+              <div class="testimonial-header">
+                <img src="/user/src/assets/user.jpg" alt="user" />
+                <div class="testimonial-profile">
+                  <p>Maulana Haqi</p>
+                  <p>maulanahaqi@mail.com</p>
+                </div>
               </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
-              tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
-              neque magna condimentum augue. Cras interdum blandit eros id eleifend.
-              Sed lacinia augue ut lobortis aliquet.
-            </p>
           </div>
-          <div class="testimonial-figure">
-            <div class="testimonial-header">
-              <img src="/user/src/assets/user.jpg" alt="user" />
-              <div class="testimonial-profile">
-                <p>Maulana Haqi</p>
-                <p>maulanahaqi@mail.com</p>
+          <div class="testimonial-figure swiper-slide">
+            <div class="testimonial-fill">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
+                tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
+                neque magna condimentum augue. Cras interdum blandit eros id eleifend.
+                Sed lacinia augue ut lobortis aliquet.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
               </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
-              tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
-              neque magna condimentum augue. Cras interdum blandit eros id eleifend.
-              Sed lacinia augue ut lobortis aliquet.
-            </p>
-          </div>
-          <div class="testimonial-figure">
-            <div class="testimonial-header">
-              <img src="/user/src/assets/user.jpg" alt="user" />
-              <div class="testimonial-profile">
-                <p>Maulana Haqi</p>
-                <p>maulanahaqi@mail.com</p>
+              <div class="testimonial-header">
+                <img src="/user/src/assets/user.jpg" alt="user" />
+                <div class="testimonial-profile">
+                  <p>Maulana Haqi</p>
+                  <p>maulanahaqi@mail.com</p>
+                </div>
               </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
-              tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
-              neque magna condimentum augue. Cras interdum blandit eros id eleifend.
-              Sed lacinia augue ut lobortis aliquet.
-            </p>
           </div>
-          <div class="testimonial-figure">
-            <div class="testimonial-header">
-              <img src="/user/src/assets/user.jpg" alt="user" />
-              <div class="testimonial-profile">
-                <p>Maulana Haqi</p>
-                <p>maulanahaqi@mail.com</p>
+          <div class="testimonial-figure swiper-slide">
+            <div class="testimonial-fill">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
+                tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
+                neque magna condimentum augue. Cras interdum blandit eros id eleifend.
+                Sed lacinia augue ut lobortis aliquet.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
               </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
-              tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
-              neque magna condimentum augue. Cras interdum blandit eros id eleifend.
-              Sed lacinia augue ut lobortis aliquet.
-            </p>
-          </div>
-          <div class="testimonial-figure">
-            <div class="testimonial-header">
-              <img src="/user/src/assets/user.jpg" alt="user" />
-              <div class="testimonial-profile">
-                <p>Maulana Haqi</p>
-                <p>maulanahaqi@mail.com</p>
+              <div class="testimonial-header">
+                <img src="/user/src/assets/user.jpg" alt="user" />
+                <div class="testimonial-profile">
+                  <p>Maulana Haqi</p>
+                  <p>maulanahaqi@mail.com</p>
+                </div>
               </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
-              tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
-              neque magna condimentum augue. Cras interdum blandit eros id eleifend.
-              Sed lacinia augue ut lobortis aliquet.
-            </p>
           </div>
+          <div class="testimonial-figure swiper-slide">
+            <div class="testimonial-fill">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
+                tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
+                neque magna condimentum augue. Cras interdum blandit eros id eleifend.
+                Sed lacinia augue ut lobortis aliquet.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              </div>
+              <div class="testimonial-header">
+                <img src="/user/src/assets/user.jpg" alt="user" />
+                <div class="testimonial-profile">
+                  <p>Maulana Haqi</p>
+                  <p>maulanahaqi@mail.com</p>
+                </div>
+              </div>
+          </div>
+          <div class="testimonial-figure swiper-slide">
+            <div class="testimonial-fill">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
+                tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
+                neque magna condimentum augue. Cras interdum blandit eros id eleifend.
+                Sed lacinia augue ut lobortis aliquet.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              </div>
+              <div class="testimonial-header">
+                <img src="/user/src/assets/user.jpg" alt="user" />
+                <div class="testimonial-profile">
+                  <p>Maulana Haqi</p>
+                  <p>maulanahaqi@mail.com</p>
+                </div>
+              </div>
+          </div>
+          <div class="testimonial-figure swiper-slide">
+            <div class="testimonial-fill">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum,
+                tortor quis pretium laoreet, neque sem vestibulum lorem, quis convallis
+                neque magna condimentum augue. Cras interdum blandit eros id eleifend.
+                Sed lacinia augue ut lobortis aliquet.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              </div>
+              <div class="testimonial-header">
+                <img src="/user/src/assets/user.jpg" alt="user" />
+                <div class="testimonial-profile">
+                  <p>Maulana Haqi</p>
+                  <p>maulanahaqi@mail.com</p>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     `;
   }
-
-  async getCSS() {
-    return [];
-  }
 }
+
+window.onload = () => {
+  new Swiper(".testimonials-slider", {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+};

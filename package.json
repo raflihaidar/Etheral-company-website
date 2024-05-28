@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "swiper": "^11.1.3"
   }
 }
