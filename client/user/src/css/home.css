@@ -111,10 +111,10 @@ header .image-slider {
 }
 
 .services {
-  width: 80%;
+  width: 90%;
   padding: 10rem 0;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -158,6 +158,7 @@ header .image-slider {
 
 .services .title {
   width: 40%;
+  height: auto;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -202,6 +203,7 @@ header .image-slider {
 .gallery button a {
   text-decoration: none;
 }
+
 .portfolio-container .title {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -264,7 +266,7 @@ header .image-slider {
   margin: 0 auto;
   color: #fff;
   text-align: justify;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow: visible;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -292,6 +294,7 @@ header .image-slider {
 .testimonial-list {
   display: flex;
   gap: 2rem;
+  height: 100%;
 }
 
 .testimonial-figure {
