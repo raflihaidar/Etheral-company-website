@@ -3,11 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/Gallery.css" />
     <title>Ethereal</title>
   </head>
   <body>
     <!-- Gallery Page Start -->
-    <section id="Gallery"></section>
+    <section id="Gallery">
+      <!-- Gallery Page Start -->
+      <div class="content-container">
+        <div class="top-buttons">
+          <button class="filter-button"></button>
+          <button class="filter-button"></button>
+          <button class="filter-button"></button>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/annie-spratt-KAHOqoAF0so-unsplash.jpg"
+              alt="Image 1"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/city-of-gold-coast--jBb3c_nF_s-unsplash.jpg"
+              alt="Image 2"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/city-of-gold-coast-AHOsCAuCnUU-unsplash.jpg"
+              alt="Image 3"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/johan-mouchet-b2TXfsby-rg-unsplash.jpg"
+              alt="Image 4"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/josh-hild-dFljwwWozGc-unsplash.jpg"
+              alt="Image 5"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/karsten-winegeart-50TGWi-XDlI-unsplash.jpg"
+              alt="Image 6"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/leon-rohrwild-2-xuC1fVLCI-unsplash.jpg"
+              alt="Image 7"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/leonid-panchenko-PkKBZAlW-pU-unsplash.jpg"
+              alt="Image 8"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/mercedes-c-klasse-limousine-2021.jpg"
+              alt="Image 9"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/mos-design-OR3lVXBH74o-unsplash.jpg"
+              alt="Image 10"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/peter-thomas-FFMTfzALnEE-unsplash.jpg"
+              alt="Image 11"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/peter-thomas-GoN5enlXfBU-unsplash.jpg"
+              alt="Image 12"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/sir-simo-k8r_6pJkulQ-unsplash.jpg"
+              alt="Image 13"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/tim-mossholder-wu0qo6Uai34-unsplash.jpg"
+              alt="Image 14"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/victoria-duarte-Rh5Q4UUZoIs-unsplash.jpg"
+              alt="Image 15"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/img/stockp/yuri-krupenin-6-zO32X6d9A-unsplash.jpg"
+              alt="Image 16"
+            />
+            <button class="view-button" onclick="viewImage(this)">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage" />
+      </div>
+    </section>
     <!-- Gallery Page End -->
+    <script src="../assets/js/gallery.js"></script>
   </body>
 </html>
