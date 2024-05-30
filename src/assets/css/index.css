@@ -152,7 +152,12 @@ footer {
   padding: 2rem 0 0 0;
   position: relative;
   bottom: 0;
+<<<<<<< HEAD:src/assets/css/index.css
   margin: 2rem 0 0 0;
+=======
+  margin: 40rem 0 0 0;
+  border-top: 1px solid white;
+>>>>>>> 0b760a9f8064011228583e69d93df59d7af8c8de:client/user/src/css/index.css
 
   .top {
     display: flex;
