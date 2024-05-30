@@ -131,6 +131,7 @@ footer {
   position: relative;
   bottom: 0;
   margin: 40rem 0 0 0;
+  border-top: 1px solid white;
 
   .top {
     display: flex;
