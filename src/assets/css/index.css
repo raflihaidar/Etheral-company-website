@@ -51,13 +51,14 @@ html {
 
 #nav {
   width: 100%;
-  z-index: 2;
+  z-index: 888;
   position: fixed;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: inherit;
   color: white;
 }
@@ -224,12 +225,13 @@ footer {
 /* Anything udner 1024px */
 @media screen and (max-width: 768px) {
   #nav #navigation {
-    width: 100vh;
+    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     gap: 3rem 0;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 2rem 6rem;
     width: 100%;
     position: absolute;
     top: 0;
@@ -242,6 +244,7 @@ footer {
   }
 
   .humberger-menu {
+    right: 0;
     display: flex;
     z-index: 999;
   }

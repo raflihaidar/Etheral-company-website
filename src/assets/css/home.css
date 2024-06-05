@@ -1,7 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
+  max-width: 90%;
+  max-height: 100%;
+  margin: 5rem auto;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -11,11 +17,11 @@ header {
   height: 100%;
   color: #fff;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 5rem 0 10rem 0;
 }
 
 header .caption {
-  padding-top: 5rem;
   width: 50%;
   height: 100%;
 }
@@ -33,25 +39,25 @@ header svg {
 
 header .image-slider {
   width: 45%;
-  height: 250px;
+  height: 300px;
   display: flex;
   gap: 2rem;
   rotate: 20deg;
 }
 
 .image-slider .bottom-to-top {
-  height: calc(250px * 12);
-  animation: loop 20s linear infinite;
+  height: calc(300px * 12);
+  animation: loop 30s linear infinite;
 }
 
 .image-slider .top-to-bottom {
-  height: calc(250px * 12);
-  animation: loop2 20s linear infinite;
+  height: calc(300px * 12);
+  animation: loop2 30s linear infinite;
 }
 
 .image-slider figure {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +71,7 @@ header .image-slider {
 }
 
 .about-us {
-  padding: 20rem 0 5rem 0;
+  padding: 10rem 0 5rem 0;
   width: 90%;
   height: 100%;
   margin: 0 auto;
@@ -138,7 +144,7 @@ header .image-slider {
   background-color: #16c79a;
   text-align: center;
   border-radius: 20px;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .services .card-title {
@@ -158,6 +164,7 @@ header .image-slider {
 }
 
 .services .title {
+  text-align: center;
   width: 40%;
   height: auto;
   background: rgb(2, 0, 36);
@@ -169,8 +176,8 @@ header .image-slider {
     rgba(209, 173, 224, 1) 100%
   );
   rotate: 90deg;
-  padding: 1rem 3rem;
-  font-size: 0.9rem;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
   color: #fff;
 }
 
@@ -386,15 +393,17 @@ header .image-slider {
 
 @media screen and (max-width: 768px) {
   header {
+    margin-top: 0;
     width: 90%;
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
+    padding: 0;
   }
 
   header .caption {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 0;
     width: 100%;
     padding: 10rem 0 0 0;
@@ -418,6 +427,7 @@ header .image-slider {
   }
 
   .image-slider figure {
+    width: 250px;
     flex-direction: row;
     gap: 0 2rem;
   }
@@ -477,7 +487,7 @@ header .image-slider {
 
     .title {
       text-align: center;
-      width: 60%;
+      width: 90%;
       order: 1;
       margin: 2rem 0;
       background: rgb(2, 0, 36);
@@ -490,7 +500,7 @@ header .image-slider {
       );
       rotate: 0deg;
       padding: 1rem 3rem;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: #fff;
     }
 
