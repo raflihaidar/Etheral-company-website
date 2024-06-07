@@ -1,11 +1,19 @@
+.active {
+  background-color: #8a2be2 !important;
+}
+
 .content-container {
   background-color: white;
   padding: 2rem;
   border-radius: 10px;
   width: 80%;
+  margin: 0 auto;
   max-width: 1200px;
   margin-top: 100px;
-  margin-left: 150px;
+}
+
+.container-active {
+  display: grid !important;
 }
 
 .top-buttons {
@@ -30,9 +38,11 @@
 }
 
 .gallery-container {
-  display: grid;
+  width: 100%;
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  margin: 0 auto;
 }
 
 .gallery-item {

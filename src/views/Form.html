@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/Form.css" />
+    <title>Document</title>
+  </head>
+  <body id="Form">
+    <nav>
+      <a href="#service">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+          />
+        </svg>
+      </a>
+    </nav>
+    <div class="form-container">
+      <form action="">
+        <section>
+          <div class="input">
+            <label for="fname"
+              >First Name<span class="required-label">*</span></label
+            >
+            <input type="text" id="fname" autocomplete="off" required />
+          </div>
+          <div class="input">
+            <label for="lname"
+              >Last Name<span class="required-label">*</span></label
+            >
+            <input type="text" id="lname" autocomplete="off" required />
+          </div>
+        </section>
+        <section>
+          <div class="input">
+            <label for="email"
+              >Email<span class="required-label">*</span></label
+            >
+            <input type="text" id="email" autocomplete="off" required />
+          </div>
+          <div class="input">
+            <label for="service"
+              >Service Type <span class="required-label">*</span></label
+            >
+            <select>
+              <option value="">Wedding</option>
+              <option value="">Potrait</option>
+              <option value="">Product</option>
+            </select>
+          </div>
+        </section>
+        <section>
+          <div class="input">
+            <label for="date">Date <span class="required-label">*</span></label>
+            <input type="text" id="date" autocomplete="off" required />
+          </div>
+          <div class="input">
+            <label for="time">Time<span class="required-label">*</span></label>
+            <input type="text" id="time" autocomplete="off" required />
+          </div>
+        </section>
+        <section>
+          <div class="input-textarea">
+            <label for="address"
+              >Address<span class="required-label">*</span></label
+            >
+            <textarea name="" id="address" required></textarea>
+          </div>
+        </section>
+        <section>
+          <div class="input-textarea">
+            <label for="request">Request</label>
+            <textarea name="" id="request"></textarea>
+          </div>
+        </section>
+        <section>
+          <div>
+            <input type="checkbox" name="" id="" required />
+            <label for=""
+              >I agress with the Privacy Policy and Terms of Service</label
+            >
+          </div>
+        </section>
+        <button type="submit">Booking</button>
+      </form>
+    </div>
+  </body>
+</html>

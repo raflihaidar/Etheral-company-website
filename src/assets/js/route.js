@@ -1,10 +1,18 @@
 $(document).ready(function () {
   function loadPage(page) {
+    if (page == "form") {
+      $("#nav").hide();
+      $("#footer").hide();
+    } else {
+      $("#nav").show();
+      $("#footer").show();
+    }
     $("#app").load(`${page}.html`);
   }
 
   function handleRouting() {
     const hash = window.location.hash.substring(1);
+    console.log(hash);
     if (hash) {
       loadPage(hash);
     } else {
@@ -21,9 +29,10 @@ $(document).ready(function () {
   });
 
   // Handle navigation clicks (optional)
-  $("#nav a").click(function (e) {
+  $("a").click(function (e) {
     e.preventDefault();
     const target = $(this).attr("href");
     window.location.hash = target;
+    console.log(target);
   });
 });
