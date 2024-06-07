@@ -21,3 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeButton = document.querySelector(".close");
   closeButton.addEventListener("click", closeModal);
 });
+
+const container = document.querySelectorAll(".gallery-container");
+const filterButton = document.querySelectorAll(".filter-button");
+const filter = (e) => {
+  console.log(e.target);
+  alert("connected");
+};
+
+filterButton.addEventListener("click", filter);
