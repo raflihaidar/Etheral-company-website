@@ -530,6 +530,9 @@ header .image-slider {
     grid-auto-rows: 300px;
   }
 
+  .testimonial-title {
+    text-align: center;
+  }
   .testimonial-list {
     display: flex;
     overflow-x: scroll;
