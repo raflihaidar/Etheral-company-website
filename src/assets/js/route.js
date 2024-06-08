@@ -3,6 +3,8 @@ $(document).ready(function () {
     if (page == "form") {
       $("#nav").hide();
       $("#footer").hide();
+    } else if (page == "gallery") {
+      $("#footer").hide();
     } else {
       $("#nav").show();
       $("#footer").show();
