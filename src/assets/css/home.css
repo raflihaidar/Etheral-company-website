@@ -208,6 +208,11 @@ header .image-slider {
   justify-content: center;
 }
 
+.see-more a {
+  text-decoration: none;
+  color: #16c79a;
+}
+
 .gallery button a {
   text-decoration: none;
 }

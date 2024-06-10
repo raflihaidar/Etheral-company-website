@@ -31,6 +31,7 @@
 }
 
 * {
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -67,6 +68,10 @@ html {
   color: white;
   text-decoration: none;
   margin-right: 5rem;
+}
+
+nav a:focus {
+  border-bottom: 3px solid sandybrown;
 }
 
 #nav #navigation {
