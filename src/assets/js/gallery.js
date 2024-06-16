@@ -1,41 +1,47 @@
 (function () {
-  let modal = document.getElementById("imageModal");
-  let modalImg = document.getElementById("fullImage");
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("fullImage");
   const container = document.querySelectorAll(".gallery-container");
   const contentContainer = document.querySelector(".content-container");
   const filterButton = document.querySelectorAll(".filter-button");
   const closeButton = document.querySelector(".close");
-  const viewButtons = document.querySelectorAll(".view-button");
   const listModalImage = document.querySelector(".image-list");
   const imageIndex = document.querySelector(".image-index");
+  const galleryItem = document.querySelectorAll(".gallery-item");
 
-  const viewImage = (button) => {
+  const viewImage = (e) => {
     modal.style.display = "block";
-    modalImg.src = button.previousElementSibling.src;
+    modalImg.src = e.target.getAttribute("src");
+    galleryItem.forEach((item) => {
+      if (item.classList == e.target.parentNode.classList) {
+        item.classList.add("image-active");
+      } else {
+        item.classList.remove("image-active");
+      }
+    });
   };
+
+  galleryItem.forEach((item) => {
+    item.addEventListener("click", viewImage);
+  });
 
   const closeModal = () => {
     modal.style.display = "none";
     listModalImage.firstChild.classList.remove("image-list");
-    console.log("before", contentContainer);
     contentContainer.appendChild(listModalImage.firstChild);
-    console.log("after", contentContainer);
     listModalImage.removeChild(listModalImage.firstChild);
   };
 
   function addEventListenersToGroup(groupName) {
-    const buttons = document.querySelectorAll(
-      `.view-button[data-group='${groupName}']`
+    const images = document.querySelectorAll(
+      `.image-item[data-group='${groupName}']`
     );
 
-    buttons.forEach(function (button, index) {
-      button.addEventListener("click", function () {
-        const parentButton = button.parentNode.parentNode;
-        viewImage(button);
+    images.forEach(function (image, index) {
+      image.addEventListener("click", function () {
+        const parentButton = image.parentNode.parentNode;
         parentButton.classList.toggle("image-list");
         listModalImage.appendChild(parentButton);
-        console.log(listModalImage.childNodes);
-        console.log(parseInt(imageIndex.innerHTML));
 
         // Update the index display
         imageIndex.textContent = (index + 1).toString().padStart(2, "0");
