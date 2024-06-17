@@ -29,16 +29,8 @@
       <form action="">
         <section>
           <div class="input">
-            <label for="fname"
-              >First Name<span class="required-label">*</span></label
-            >
+            <label for="fname">Name<span class="required-label">*</span></label>
             <input type="text" id="fname" autocomplete="off" required />
-          </div>
-          <div class="input">
-            <label for="lname"
-              >Last Name<span class="required-label">*</span></label
-            >
-            <input type="text" id="lname" autocomplete="off" required />
           </div>
         </section>
         <section>
@@ -52,10 +44,10 @@
             <label for="service"
               >Service Type <span class="required-label">*</span></label
             >
-            <select>
-              <option value="">Wedding</option>
-              <option value="">Potrait</option>
-              <option value="">Product</option>
+            <select id="service">
+              <option value="wedding">Wedding</option>
+              <option value="potrait">Potrait</option>
+              <option value="product">Product</option>
             </select>
           </div>
         </section>
@@ -83,16 +75,17 @@
             <textarea name="" id="request"></textarea>
           </div>
         </section>
-        <section>
+        <!-- <section>
           <div>
             <input type="checkbox" name="" id="" required />
             <label for=""
               >I agress with the Privacy Policy and Terms of Service</label
             >
           </div>
-        </section>
-        <button type="submit">Booking</button>
+        </section> -->
+        <button type="button" onclick="sendwhatsapp();">Booking</button>
       </form>
+      <script src="../assets/js/form.js"></script>
     </div>
   </body>
 </html>

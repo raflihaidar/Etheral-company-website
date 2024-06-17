@@ -43,6 +43,11 @@ header .image-slider {
   display: flex;
   gap: 2rem;
   rotate: 20deg;
+
+  img {
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .image-slider .bottom-to-top {
