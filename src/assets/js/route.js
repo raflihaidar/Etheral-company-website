@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   function handleRouting() {
     const hash = window.location.hash.substring(1);
-    if (hash) {
+    if (hash && hash != "top") {
       loadPage(hash);
       // Menghapus kelas nav-active dari semua elemen navigasi
       $("nav a").removeClass("nav-active");

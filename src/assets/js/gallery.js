@@ -24,7 +24,6 @@
   };
 
   modalImg.addEventListener("animationend", function () {
-    // Hapus animasi dengan mengatur properti animation menjadi 'none'
     modalImg.classList.remove("blur-animation");
   });
 
@@ -33,6 +32,9 @@
   });
 
   const closeModal = () => {
+    galleryItem.forEach((item) => {
+      item.classList.remove("image-active");
+    });
     modal.style.display = "none";
     listModalImage.firstChild.classList.remove("image-list");
     contentContainer.appendChild(listModalImage.firstChild);
@@ -49,7 +51,6 @@
         const parentButton = image.parentNode.parentNode;
         if (!parentButton.classList.contains("image-list")) {
           parentButton.classList.toggle("image-list");
-          // parentButton.classList.remove("gallery-container");
           listModalImage.appendChild(parentButton);
         }
 
