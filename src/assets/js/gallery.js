@@ -11,7 +11,9 @@
 
   const viewImage = (e) => {
     modal.style.display = "block";
+    modalImg.classList.add("blur-animation");
     modalImg.src = e.target.getAttribute("src");
+    modalImg.classList.add("blur-animation");
     galleryItem.forEach((item) => {
       if (item.classList == e.target.parentNode.classList) {
         item.classList.add("image-active");
@@ -20,6 +22,11 @@
       }
     });
   };
+
+  modalImg.addEventListener("animationend", function () {
+    // Hapus animasi dengan mengatur properti animation menjadi 'none'
+    modalImg.classList.remove("blur-animation");
+  });
 
   galleryItem.forEach((item) => {
     item.addEventListener("click", viewImage);
@@ -40,8 +47,11 @@
     images.forEach(function (image, index) {
       image.addEventListener("click", function () {
         const parentButton = image.parentNode.parentNode;
-        parentButton.classList.toggle("image-list");
-        listModalImage.appendChild(parentButton);
+        if (!parentButton.classList.contains("image-list")) {
+          parentButton.classList.toggle("image-list");
+          // parentButton.classList.remove("gallery-container");
+          listModalImage.appendChild(parentButton);
+        }
 
         // Update the index display
         imageIndex.textContent = (index + 1).toString().padStart(2, "0");

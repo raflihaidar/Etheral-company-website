@@ -70,9 +70,13 @@ html {
   margin-right: 5rem;
 }
 
-nav a:focus {
+.nav-active {
   border-bottom: 3px solid sandybrown;
 }
+
+/* nav a:focus {
+  border-bottom: 3px solid sandybrown;
+} */
 
 #nav #navigation {
   text-align: right;
@@ -272,6 +276,11 @@ footer {
   }
 
   footer .top .profile {
-    width: 50%;
+    width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+
+  footer .top {
+    flex-direction: column;
   }
 }
