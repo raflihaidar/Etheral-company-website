@@ -8,6 +8,8 @@
   const listModalImage = document.querySelector(".image-list");
   const imageIndex = document.querySelector(".image-index");
   const galleryItem = document.querySelectorAll(".gallery-item");
+  const nextIcon = document.querySelector(".next-icon");
+  const precIcon = document.querySelector(".prev-icon");
 
   const viewImage = (e) => {
     modal.style.display = "block";
@@ -22,6 +24,21 @@
       }
     });
   };
+
+  const nextSlide = () => {
+    console.log("index of image : ", imageIndex.textContent);
+    console.log(modalImg.src);
+  };
+
+  const prevSlide = () => {
+    console.log("index of image : ", imageIndex.textContent);
+    galleryItem.forEach((item, index) => {
+      console.log(modalImg.src);
+    });
+  };
+
+  nextIcon.addEventListener("click", nextSlide);
+  precIcon.addEventListener("click", prevSlide);
 
   modalImg.addEventListener("animationend", function () {
     modalImg.classList.remove("blur-animation");
