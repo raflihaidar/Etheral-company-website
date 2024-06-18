@@ -1,5 +1,5 @@
 function sendwhatsapp() {
-  var phonenumber = "+628933175670";
+  var phonenumber = "+6282121291256";
 
   var name = document.getElementById("fname").value;
   var email = document.getElementById("email").value;
@@ -34,7 +34,7 @@ function sendwhatsapp() {
     "*Lokasi   :* " +
     addres +
     "%0a" +
-    "*Note     :* " +
+    "*Catatan     :* " +
     request +
     "%0a" +
     "%0a" +

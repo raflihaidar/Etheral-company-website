@@ -11,15 +11,29 @@ nav {
   }
 }
 
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1.0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
 .form-container {
   width: 80%;
   margin: 0 auto;
+
 
   form {
     width: 90%;
     padding: 2rem 3rem;
     margin: 0 auto;
-    background-color: #fff;
+    background-color:rgb(220, 221, 225);
     border-radius: 25px;
 
     label {
@@ -51,7 +65,7 @@ nav {
       .input-textarea {
         width: 100%;
         display: grid;
-        gap: 0.5rem 0;
+        gap: 2rem 0;
 
         input {
           padding: 0.8rem;
@@ -71,7 +85,13 @@ nav {
       outline: none;
       padding: 1rem 0;
       font-size: 1rem;
+      background-color: #25D366;
+      font-weight: bold;
     }
+
+    /* button:hover{
+      color: #fff;
+    } */
   }
 }
 
