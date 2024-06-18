@@ -58,7 +58,12 @@
   h3 {
     font-size: 1rem;
     margin-bottom: 2rem;
+
   }
+
+  h2{
+    text-align: center;
+}
 
   .price {
     font-size: 2.5rem;
@@ -115,7 +120,7 @@
 
 .button a:hover {
   background-color: #1a2539;
-  /* scale: 1.1; */
+   scale: 1.1; 
   transition: 0.3s ease-out;
 }
 
