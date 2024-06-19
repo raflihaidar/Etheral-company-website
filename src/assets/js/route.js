@@ -1,9 +1,9 @@
 $(document).ready(function () {
   function loadPage(page) {
-    if (page == "form") {
+    if (page === "form") {
       $("#nav").hide();
       $("#footer").hide();
-    } else if (page == "gallery") {
+    } else if (page === "gallery") {
       $("#footer").hide();
     } else {
       $("#nav").show();
@@ -14,11 +14,15 @@ $(document).ready(function () {
 
   function handleRouting() {
     const hash = window.location.hash.substring(1);
-    console.log(hash);
-    if (hash) {
+    if (hash && hash != "top") {
       loadPage(hash);
+      // Menghapus kelas nav-active dari semua elemen navigasi
+      $("nav a").removeClass("nav-active");
+      // Menambahkan kelas nav-active pada elemen yang sesuai
+      $("#" + hash).addClass("nav-active");
     } else {
       loadPage("Home");
+      $("#home").addClass("nav-active");
     }
   }
 
@@ -31,10 +35,9 @@ $(document).ready(function () {
   });
 
   // Handle navigation clicks (optional)
-  $("a").click(function (e) {
+  $("nav a").click(function (e) {
     e.preventDefault();
-    const target = $(this).attr("href");
+    const target = $(this).attr("href").substring(1);
     window.location.hash = target;
-    console.log(target);
   });
 });

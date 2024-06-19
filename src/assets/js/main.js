@@ -13,8 +13,6 @@ menuToggle.addEventListener("click", function () {
 });
 
 window.onload = () => {
-  console.log(backToTop);
-
   window.addEventListener("scroll", console.log(window.scrollY));
 };
 
