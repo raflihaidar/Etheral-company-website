@@ -1,6 +1,15 @@
 ## Etheral-company-website
 
-## Cara running file :
+Web profile untuk UMKM yang berada pada Tulungagung
+
+## Tech stack
+
+1. HTML
+2. CSS
+3. JavaScript
+4. Jquery routing
+
+## Cara running file
 
 Run live server pada index.html
 
