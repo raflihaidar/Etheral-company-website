@@ -3,7 +3,7 @@ function sendwhatsapp() {
 
   var name = document.getElementById("fname").value;
   var email = document.getElementById("email").value;
-  var service = document.getElementById("service").value;
+  var Service = document.getElementById("Service").value;
   var date = document.getElementById("date").value;
   var time = document.getElementById("time").value;
   var addres = document.getElementById("address").value;
@@ -23,7 +23,7 @@ function sendwhatsapp() {
     email +
     "%0a" +
     "*Layanan  :* " +
-    service +
+    Service +
     "%0a" +
     "*Tanggal  :* " +
     date +
