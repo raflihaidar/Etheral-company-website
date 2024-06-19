@@ -21,6 +21,11 @@ header {
   padding: 5rem 0 10rem 0;
 }
 
+header .tagline{
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+
 header .caption {
   width: 50%;
   height: 100%;
