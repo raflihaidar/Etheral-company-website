@@ -170,8 +170,9 @@ header .image-slider {
 
 .services .title {
   text-align: center;
-  width: 40%;
-  height: auto;
+  width: 50%;
+  margin: auto;
+  /* height: auto; */
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -230,7 +231,7 @@ header .image-slider {
     rgba(252, 255, 152, 1) 0%,
     rgba(237, 39, 200, 1) 100%
   );
-  height: auto;
+  /* height: auto; */
   rotate: -90deg;
   padding: 1rem 4rem;
   color: black;
