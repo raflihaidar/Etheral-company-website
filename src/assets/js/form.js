@@ -34,7 +34,7 @@ function sendwhatsapp() {
     "*Lokasi   :* " +
     addres +
     "%0a" +
-    "*Catatan     :* " +
+    "*Catatan  :* " +
     request +
     "%0a" +
     "%0a" +

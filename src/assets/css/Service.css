@@ -45,6 +45,7 @@
 
 .text ul li img {
   width: 20px;
+  height: 20px;
 }
 
 .help {
@@ -119,16 +120,17 @@
 }
 
 .button a:hover {
-  background-color: #1a2539;
-   scale: 1.1; 
-  transition: 0.3s ease-out;
+  /* background-color: #1a2539; */
+  scale: 1.1;  
+  transition: 0.3s ease-out; 
 }
 
-.box:hover {
+.box img:hover {
   /* background-color: #000000; */
-  /* scale: 1.1; */
-  transition: 0.3s ease-out;
+  scale: 1.1; 
+  transition: 0.3s ease-out; 
 }
+
 
 popup {
   display: none;
