@@ -140,6 +140,10 @@ html {
     font-size: 3rem;
     cursor: pointer;
   }
+
+  .prev-icon {
+    display: none;
+  }
 }
 
 .modal-content {
@@ -204,6 +208,10 @@ html {
 @media (max-width: 768px) {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-list {
+    display: none;
   }
 }
 
