@@ -29,7 +29,7 @@
       <form action="">
         <section>
           <div class="input">
-            <label for="fname">Name<span class="required-label">*</span></label>
+            <label for="fname">Nama Customer<span class="required-label">*</span></label>
             <input type="text" id="fname" autocomplete="off" required />
           </div>
         </section>
@@ -42,7 +42,7 @@
           </div>
           <div class="input">
             <label for="service"
-              >Service Type <span class="required-label">*</span></label
+              >Layanan <span class="required-label">*</span></label
             >
             <select id="service">
               <option value="Paket Wedding 1">Paket Wedding 1</option>
@@ -73,7 +73,7 @@
         </section>
         <section>
           <div class="input">
-            <label for="date">Date <span class="required-label">*</span></label>
+            <label for="date">Tanggal <span class="required-label">*</span></label>
             <input type="date" name="text" id="date" autocomplete="off" required />
             <!-- <script type="text/javascript">
               document.getElementById('date').value = (new Date().format("m/dd/yy"));
@@ -83,21 +83,21 @@
            </script> -->
           </div>
           <div class="input">
-            <label for="time">Time<span class="required-label">*</span></label>
-            <input type="text" id="time" autocomplete="off" required />
+            <label for="time">Waktu<span class="required-label">*</span></label>
+            <input type="time" id="time" autocomplete="off" required />
           </div>
         </section>
         <section>
           <div class="input-textarea">
             <label for="address"
-              >Address<span class="required-label">*</span></label
+              >Lokasi<span class="required-label">*</span></label
             >
             <textarea name="" id="address" required></textarea>
           </div>
         </section>
         <section>
           <div class="input-textarea">
-            <label for="request">Request</label>
+            <label for="request">Catatan</label>
             <textarea name="" id="request"></textarea>
           </div>
         </section>
@@ -109,7 +109,9 @@
             >
           </div>
         </section> -->
-        <button type="button" onclick="sendwhatsapp();">Booking</button>
+        <button type="button" onclick="sendwhatsapp();">
+          <a class="blink" style="color:aliceblue"> -> Booking Now <-</a>
+        </button>
       </form>
       <script src="../assets/js/form.js"></script>
     </div>

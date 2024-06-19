@@ -44,8 +44,22 @@ html {
   border-bottom: 3px solid sandybrown;
 }
 
+nav a:hover {
+  border-bottom: 3px solid sandybrown;
+}
+
 #nav #navigation {
   text-align: right;
+}
+
+nav img{
+  width: 30px;
+  height: 30px;
+}
+nav figure{
+  display: flex;
+  gap:3px;
+  text-align: center;
 }
 
 #app {
