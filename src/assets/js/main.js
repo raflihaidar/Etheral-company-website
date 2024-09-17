@@ -12,10 +12,6 @@ menuToggle.addEventListener("click", function () {
   }
 });
 
-window.onload = () => {
-  window.addEventListener("scroll", console.log(window.scrollY));
-};
-
 window.addEventListener("scroll", () => {
   if (window.scrollY > 400) {
     backToTop.style.visibility = "visible";

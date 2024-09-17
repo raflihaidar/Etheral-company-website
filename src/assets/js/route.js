@@ -17,7 +17,6 @@ $(document).ready(function () {
     if (hash && hash != "top") {
       console.log("connected");
       loadPage(hash);
-      console.log("#" + hash);
       // Menghapus kelas nav-active dari semua elemen navigasi
       $("nav a").removeClass("nav-active");
       // Menambahkan kelas nav-active pada elemen yang sesuai
