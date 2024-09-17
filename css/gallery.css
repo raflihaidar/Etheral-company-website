@@ -1,0 +1,250 @@
+@import url("style.css");
+
+.active {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.content-container {
+    background-color: white;
+    border-top-right-radius: 20px;
+    padding: 2rem;
+}
+
+.container-active {
+    display: grid !important;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filter-button {
+    background-color: #686d76;
+    border: none;
+    padding: 1rem 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.filter-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.gallery-container {
+    width: 100%;
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.image-list {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.image-active {
+    border: 5px solid sandybrown;
+    border-radius: 15px;
+}
+
+.gallery-item {
+    background-color: #ccc;
+    padding-top: 100%;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    animation: fade 0.3s ease-in;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    scale: 1;
+    transition: scale 0.3s ease-in;
+}
+
+.gallery-item .view-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .view-button {
+    opacity: 1;
+}
+
+.gallery-item img:hover {
+    scale: 1.1;
+    transition: 0.3s ease-out;
+}
+
+.view-button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #8a2be2;
+}
+
+.gallery-item img:hover {
+    scale: 1.1;
+    transition: scale 0.3s ease-in;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 1);
+
+    h1 {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.modal-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .next-icon,
+    .prev-icon {
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    .prev-icon {
+        display: none;
+    }
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 500px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.blur-animation {
+    animation: blur 0.6s ease-in forwards;
+}
+
+.navigation-modal {
+    height: 100%;
+    overflow-y: scroll;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.close {
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(10px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-list {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}

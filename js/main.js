@@ -1,5 +1,4 @@
 //* Humburger Menu
-
 const navigation = document.querySelector("#nav #navigation");
 const backToTop = document.querySelector("#back-to-top");
 
